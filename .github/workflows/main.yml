@@ -7,9 +7,9 @@ jobs:
     steps:
      - name: Checkout
        uses: actions/checkout@v6.0.1
+     - name : for test
+       run: mvn test
      - name: exucute app
        run: mvn -B package
      - name: for listing
        run: ls -lh target/
-     - name: for test1
-       run: mvn test
