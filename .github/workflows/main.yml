@@ -1,0 +1,13 @@
+name: mvn projct
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     - name: checkout
+       run: actoins/checkout@v6.0.1
+     - name: exucute app
+       run: mvn -B package
+     - name: for listing
+       run: ls -lh target/
