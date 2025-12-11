@@ -11,3 +11,5 @@ jobs:
        run: mvn -B package
      - name: for listing
        run: ls -lh target/
+     - name: for test
+       run: mvn test
